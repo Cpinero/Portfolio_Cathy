@@ -91,9 +91,7 @@ section#galeria h2{
 
 section#galeria div.carousel{
 	width: 60%;
-	margin: 0 auto;
-	margin-top: 30px;
-	
+	margin: 30px auto;	
 }
 
 section#galeria div.carousel div.carousel-inner{
@@ -145,6 +143,12 @@ section#proyectos h2{
 	color: #49C1BF;
 }
 
+section#proyectos h3{
+    border-bottom: 2px solid #8f8f8f;
+    width: auto;
+    font-weight: bold;
+}
+
 section#proyectos p{
 	margin-top: 20px;
 }
@@ -153,6 +157,10 @@ section#proyectos  div.proyectoImg img{
 	border-radius: 40px 40px 40px 40px;
 	width: 90%;
 	height: 90%;
+}
+
+div.proyectoImg{
+    padding: 50px;
 }
 
 
@@ -221,15 +229,67 @@ footer section div a img{
 
 /*--------------MEDIA QUERYS-----------------*/
 
-@media screen and (max-width: 575px){
-	.prueba:nth-child(1){
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  //CSS
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+  /*--------------- GALERIA------------------- */
+    section#galeria div.carousel{
+        width: 100%;
+        margin-top: 30px;
+
+    }
+
+    section#galeria div.carousel div.carousel-inner{
+        height: 100%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+  /*--------------- SOBRE MI------------------- */
+    .divContacto:nth-child(1){
 		order: 2;
 	}
-	.prueba:nth-child(2){
+	.divContacto:nth-child(2){
 		order: 1;
 	}
-
-	.sobremiTitle1{
+    
+    .sobremiTitle1{
 		display: block;
 	}
 
@@ -237,8 +297,38 @@ footer section div a img{
 		display: none;
 	}
 
-	.formulario{
-		margin: 0 auto;
-	}
-
+  /*--------------- PROYECTOS RECIENTES------------------- */
+    section#proyectos  div.proyectoImg img{
+        border-radius: 20px 20px 20px 20px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.proyectoImg{
+        padding: 30px;
+    }
+    
+  /*--------------- CONTACTO------------------- */
+    section#contacto  form input,
+    section#contacto  form textarea{
+        width: 90%;
+    }
+    
+    form.formulario{
+        margin-left: 10%;
+    }
+    
+    
+  
+  /*--------------FOOTER-----------------*/
+    footer section p{
+        font-size: 12px;
+    }
+    
+    footer section div a img{
+        margin: 10px;
+        width: 50px;
+        height: 50px;
+    }
+  
 }
