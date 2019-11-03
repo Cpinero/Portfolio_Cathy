@@ -222,57 +222,52 @@ footer section{
 }
 
 footer section div a img{
-	margin: 30px;
-	width: 100px;
-	height: 100px;
+	margin: 20px;
+	width: 90px;
+	height: 90px;
 }
 
 /*--------------MEDIA QUERYS-----------------*/
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  //CSS
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 0px) and (max-width: 480px) {
-
   /*--------------- GALERIA------------------- */
     section#galeria div.carousel{
+        width: 80%;
+
+    }
+
+    section#galeria div.carousel div.carousel-inner{
+        height: 100%;
+    }
+    
+ /*--------------- PROYECTOS RECIENTES------------------- */
+    section#proyectos  div.proyectoImg img{
+        border-radius: 40px 40px 40px 40px;
         width: 100%;
-        margin-top: 30px;
+        height: 100%;
+    }
+    
+    div.proyectoText{
+        margin-top: 10%;
+    }
+ /*--------------- CONTACTO------------------- */
+    section#contacto  form input,
+    section#contacto  form textarea{
+        width: 90%;
+    }
+    
+    form.formulario{
+        margin-left: 10%;
+    }
+    
+  
+}
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  /*--------------- GALERIA------------------- */
+    section#galeria div.carousel{
+        width: 80%;
 
     }
 
@@ -282,13 +277,76 @@ footer section div a img{
     }
     
   /*--------------- SOBRE MI------------------- */
+    .sobremiTitle1{
+		display: block;
+	}
+
+	.sobremiTitle2{
+		display: none;
+	}
+    
+  /*--------------- PROYECTOS RECIENTES------------------- */
+    
+    section#proyectos  div.proyectoImg img{
+        border-radius: 30px 30px 30px 30px;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.proyectoImg{
+        padding: 30px;
+    }
+    
+    div.proyectoText{
+        margin-top: 10%;
+    }
+    
+    
+  /*--------------- CONTACTO------------------- */
+    section#contacto  form input,
+    section#contacto  form textarea{
+        width: 90%;
+    }
+    
+    form.formulario{
+        margin-left: 10%;
+    }
+    
     .divContacto:nth-child(1){
 		order: 2;
 	}
 	.divContacto:nth-child(2){
 		order: 1;
 	}
+  
+  /*--------------FOOTER-----------------*/
+    footer section p{
+        font-size: 15px;
+    }
     
+    footer section div a img{
+        margin: 10px;
+        width: 70px;
+        height: 70px;
+    }
+  
+}
+
+
+@media (min-width: 0px) and (max-width: 480px) {
+
+  /*--------------- GALERIA------------------- */
+    section#galeria div.carousel{
+        width: 90%;
+
+    }
+
+    section#galeria div.carousel div.carousel-inner{
+        height: 100%;
+        border-radius: 20px 20px 20px 20px;
+    }
+    
+  /*--------------- SOBRE MI------------------- */
     .sobremiTitle1{
 		display: block;
 	}
@@ -317,6 +375,13 @@ footer section div a img{
     form.formulario{
         margin-left: 10%;
     }
+    
+    .divContacto:nth-child(1){
+		order: 2;
+	}
+	.divContacto:nth-child(2){
+		order: 1;
+	}
     
     
   
