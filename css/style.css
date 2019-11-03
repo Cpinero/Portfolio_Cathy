@@ -1,0 +1,244 @@
+* {
+    margin: 0; 
+    padding: 0;
+    
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, a{
+	font-family: 'Roboto', sans-serif;
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+/*--------------- MENU------------------- */
+
+nav {
+	width: 100%;
+	height: 130px;
+	background: #fff;
+    box-shadow: 2px 10px 23px -8px rgba(0,0,0,0.29);  
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: #9b9b9b;
+}
+
+ul.menu{
+    list-style:none;
+    display: flex;
+    align-items: center;
+    
+}
+
+ul.menu a {
+    text-decoration: none;
+}
+
+ul.menu a:hover {
+    color: #2e2c2c;
+}
+
+ul.menu li img.menuImg{
+    width: 100px;
+    height: 80px;
+}
+
+
+
+
+
+
+/*--------------- INICIO------------------- */
+
+
+div.banner{
+	background-color: green;
+	width: 100vw;
+	height: 90vh;
+    padding-top: 100px;
+
+
+}
+
+/*--------------- GALERIA------------------- */
+section#galeria{
+	color: #49C1BF;
+	box-shadow: 2px 10px 23px -8px rgba(0,0,0,0.29);
+    margin-top: 130px;
+    padding-bottom: 100px;
+	
+}
+
+section#galeria h2{
+	font-weight: bold;
+	margin-bottom: -10px
+}
+
+
+section#galeria div.carousel{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 30px;
+	
+}
+
+section#galeria div.carousel div.carousel-inner{
+	height: 600px;
+	border-radius: 40px 40px 40px 40px;
+}
+
+
+/*--------------- SOBRE MI------------------- */
+
+section#sobremi{
+	padding-bottom: 100px;
+    margin-top: 130px;
+	box-shadow: 2px 10px 23px -8px rgba(0,0,0,0.29);  
+}
+
+.sobremiTitle1{
+	display: none;
+}
+
+section#sobremi img.sobremi_img{
+	width: 300px;
+	height: 300px;
+}
+
+section#sobremi h2{
+	margin-bottom: -10px;
+	font-weight: bold;
+	color: #5C91C9;
+}
+
+section#sobremi p{
+	margin-top: 20px;
+}
+
+
+/*--------------- PROYECTOS RECIENTES------------------- */
+
+section#proyectos{
+	margin-top: 130px;
+	padding-bottom: 100px;
+	box-shadow: 2px 10px 23px -8px rgba(0,0,0,0.29); 
+		
+}
+
+section#proyectos h2{
+	margin-bottom: -10px;
+	font-weight: bold;
+	color: #49C1BF;
+}
+
+section#proyectos p{
+	margin-top: 20px;
+}
+
+section#proyectos  div.proyectoImg img{
+	border-radius: 40px 40px 40px 40px;
+	width: 90%;
+	height: 90%;
+}
+
+
+/*--------------- CONTACTO------------------- */
+
+section#contacto {
+	margin-top: 130px;
+	margin-bottom: 30px;
+}
+
+section#contacto h2{
+	font-weight: bold;
+	margin-bottom: -10px;
+	color: #5C91C9;
+}
+
+section#contacto  form input,
+section#contacto  form textarea{
+	border: 0;
+	border-radius: 20px 20px 20px 20px;
+	width: 65%;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	box-shadow: 0px 4px 5px -1px rgba(0,0,0,0.3);
+}
+
+section#contacto  input{
+	height: 50px;
+}
+
+section#contacto  textarea{
+  min-height: 150px;
+  max-height: 150px;
+}
+
+section#contacto  input.boton{
+  width: 150px;
+  background: #5C91C9;
+  color: #FFF;
+  font-weight: bold;
+  padding: 0;
+  cursor: pointer;
+ 
+}
+
+.contactoImg{
+	width: 75%;
+	height: 85%;
+}
+
+/*--------------FOOTER-----------------*/
+footer{
+	background-color: #374957;
+}
+
+footer section{
+	color: #fff;
+	padding: 20px;
+}
+
+footer section div a img{
+	margin: 30px;
+	width: 100px;
+	height: 100px;
+}
+
+/*--------------MEDIA QUERYS-----------------*/
+
+@media screen and (max-width: 575px){
+	.prueba:nth-child(1){
+		order: 2;
+	}
+	.prueba:nth-child(2){
+		order: 1;
+	}
+
+	.sobremiTitle1{
+		display: block;
+	}
+
+	.sobremiTitle2{
+		display: none;
+	}
+
+	.formulario{
+		margin: 0 auto;
+	}
+
+}
