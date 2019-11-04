@@ -13,7 +13,7 @@ $(document).ready(function(){
 		zindex : 999
 	});
     
-    $('header nav ul li a').click(function(event){
+    $('header nav.menu ul li a').click(function(event){
 		event.preventDefault();
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
@@ -33,6 +33,31 @@ $(document).ready(function(){
 			$('nav.menu').removeClass('fixed');
 		}
 	});
+    
+    $(document).ready(main);
+ 
+var contador = 1;
+ 
+function main(){
+	$('.bt-menu').click(function(event){
+        event.preventDefault();
+		// $('nav').toggle(); 
+ 
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+ 
+	});
+ 
+};
 
 
 });
