@@ -258,6 +258,13 @@ footer section div a img{
     nav.menu ul li:nth-child(1){
         display: none;
     }
+    
+  /*--------------- INICIO------------------- */
+    div.banner{
+        padding-top: 0px;
+        margin-top: -15px;
+    }
+    
   /*--------------- GALERIA------------------- */
     section#galeria div.carousel{
         width: 80%;
@@ -308,6 +315,12 @@ footer section div a img{
     
     nav.menu ul li:nth-child(1){
         display: none;
+    }
+    
+  /*--------------- INICIO------------------- */
+    div.banner{
+        padding-top: 0px;
+        margin-top: -15px;
     }
 
   /*--------------- GALERIA------------------- */
@@ -381,7 +394,12 @@ footer section div a img{
 @media (min-width: 0px) and (max-width: 480px) {
   /*--------------- MENU------------------- */
     section#logo{
-        display: block;
+        display: none;
+    }
+    
+  /*--------------- INICIO------------------- */
+    div.banner{
+        padding-top: 0px;
     }
 
   /*--------------- GALERIA------------------- */
