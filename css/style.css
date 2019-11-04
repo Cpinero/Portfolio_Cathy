@@ -31,6 +31,22 @@ section#logo img{
     height: 130px;
 }
 
+div.menu_bar{
+    display: none;
+}
+
+div.menu_bar img{
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    display: none;
+}
+
+header div.menu_bar span {
+    float:right;
+    font-size:40px;
+}
+
 nav {
 	width: 100%;
 	height: 130px;
@@ -396,6 +412,42 @@ footer section div a img{
     section#logo{
         display: none;
     }
+    
+    nav.menu ul li:nth-child(1){
+        display: none;
+    }
+    
+    nav.menu ul li{
+        border-bottom:1px solid #eaeaea;
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav.menu ul {
+        flex-direction: column;
+    }
+    
+    nav {
+        width: 60%;
+        height: 100%;
+        margin:0;
+		position: fixed;
+        z-index: 100;
+        left: -100%;
+    }
+    
+    div.menu_bar{
+        position: fixed;
+        z-index:40;
+        top: 0;
+        display:block;
+		width:100%;
+		background:#fff;
+    }
+    div.menu_bar img{
+        display: inline-block;
+    }
+    
     
   /*--------------- INICIO------------------- */
     div.banner{
