@@ -84,7 +84,12 @@ nav.menu ul li img.menuImg{
     height: 80px;
 }
 
-
+.imgFooter{
+    padding: 30px;
+    width: 100%;
+    height: 50%;
+    display: none;
+}
 
 
 
@@ -451,6 +456,10 @@ footer section div a img{
     
     div.menu_bar span.bt-menu{
         color: black;
+    }
+    
+    .imgFooter{
+        display: block;
     }
     
     
