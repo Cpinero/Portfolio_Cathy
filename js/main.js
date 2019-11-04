@@ -1,8 +1,9 @@
 $(document).ready(function(){
+    window.scroll(0, 0);
 //Nice scroll initialization
 	$("html").niceScroll({
 		scrollspeed: 50,
-		autohidemode : false,
+		autohidemode : true,
 		cursorwidth : 8,
 		horizrailenabled: false,
 		cursorborderradius: 8,
@@ -21,6 +22,16 @@ $(document).ready(function(){
 			$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
 		}
 		
+	});
+    
+    var altura = $('nav.menu').offset().top;
+	
+	$(window).on('scroll', function(){
+		if ( $(window).scrollTop() > altura ){
+			$('nav.menu').addClass('fixed');
+		} else {
+			$('nav.menu').removeClass('fixed');
+		}
 	});
 
 
