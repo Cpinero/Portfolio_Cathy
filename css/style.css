@@ -449,6 +449,10 @@ footer section div a img{
         display: inline-block;
     }
     
+    div.menu_bar span.bt-menu{
+        color: black;
+    }
+    
     
   /*--------------- INICIO------------------- */
     div.banner{
