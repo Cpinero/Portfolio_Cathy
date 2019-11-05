@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5, h6, p, a{
 	z-index: 100;
 }
 
+
+
 /*--------------- MENU------------------- */
 
 section#logo{
@@ -84,12 +86,6 @@ nav.menu ul li img.menuImg{
     height: 80px;
 }
 
-img.imgFooter{
-    padding: 30px;
-    width: 100%;
-    height: 50%;
-    display: none;
-}
 
 
 
@@ -414,6 +410,9 @@ footer section div a img{
 
 
 @media (min-width: 0px) and (max-width: 480px) {
+    .linea{
+    width: 80%;
+}
   /*--------------- MENU------------------- */
     section#logo{
         display: none;
@@ -459,9 +458,6 @@ footer section div a img{
         cursor: pointer;
     }
     
-    img.imgFooter{
-        display: block;
-    }
     
     
   /*--------------- INICIO------------------- */
