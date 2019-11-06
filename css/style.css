@@ -312,6 +312,10 @@ footer section div a img{
         margin-left: 10%;
     }
     
+    .contactoImg{
+        width: 80%;
+    }
+    
   
 }
 
@@ -393,6 +397,8 @@ footer section div a img{
 	.divContacto:nth-child(2){
 		order: 1;
 	}
+    
+
   
   /*--------------FOOTER-----------------*/
     footer section p{
