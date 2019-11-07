@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $(".jm-loadingpage").fadeOut("slow");
     window.scroll(0, 0);
 //Nice scroll initialization
 	$("html").niceScroll({
