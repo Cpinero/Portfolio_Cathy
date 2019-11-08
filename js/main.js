@@ -18,7 +18,7 @@ $(document).ready(function(){
 		zindex : 999
 	});
     
-    $('header a').click(function(event){
+    $('header nav.menu li a').click(function(event){
 		event.preventDefault();
 		var section = $(this).attr('href');
 		var section_pos = $(section).position();
