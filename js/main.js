@@ -18,16 +18,17 @@ $(document).ready(function(){
 		zindex : 999
 	});
     
-    $('header nav.menu li a').click(function(event){
-		event.preventDefault();
-		var section = $(this).attr('href');
-		var section_pos = $(section).position();
+   // $('header nav.menu li a').click(function(event){
+	//	event.preventDefault();
+    //    console.log("Hola");
+	//	var section = $(this).attr('href');
+	//	var section_pos = $(section).position();
 
-		if(section_pos){
-			$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
-		}
+	//	if(section_pos){
+	//		$(window).scrollTo({top:section_pos.top, left:'0px'}, 1000);
+	//	}
 		
-	});
+	//});
     
     var altura = $('nav.menu').offset().top;
 	
