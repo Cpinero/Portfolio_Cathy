@@ -6,7 +6,7 @@
 
 html{
     overflow-x: hidden;
-    scroll-behavior: smooth;
+
 }
 
 
@@ -100,7 +100,9 @@ nav.menu ul li img.menuImg{
 }
 
 
-
+.menu-tablet{
+    display: none;
+}
 
 
 
@@ -287,6 +289,13 @@ footer section div a img{
     nav.menu ul li:nth-child(1){
         display: none;
     }
+    .menu-tablet{
+        display: block;
+    }
+    
+    .menu-pc{
+        display: none
+    }
     
   /*--------------- INICIO------------------- */
     div.banner{
@@ -355,6 +364,14 @@ footer section div a img{
     
     nav.menu ul li:nth-child(1){
         display: none;
+    }
+    
+    .menu-tablet{
+        display: block;
+    }
+    
+    .menu-pc{
+        display: none
     }
     
   /*--------------- INICIO------------------- */
@@ -485,6 +502,13 @@ footer section div a img{
     div.menu_bar span.bt-menu{
         color: black;
         cursor: pointer;
+    }
+    .menu-tablet{
+        display: block;
+    }
+    
+    .menu-pc{
+        display: none
     }
     
     
