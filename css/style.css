@@ -286,9 +286,6 @@ footer section div a img{
     
     }
     
-    nav.menu ul li:nth-child(1){
-        display: none;
-    }
     .menu-tablet{
         display: block;
     }
@@ -362,9 +359,6 @@ footer section div a img{
     
     }
     
-    nav.menu ul li:nth-child(1){
-        display: none;
-    }
     
     .menu-tablet{
         display: block;
@@ -464,9 +458,6 @@ footer section div a img{
         display: none;
     }
     
-    nav.menu ul li:nth-child(1){
-        display: none;
-    }
     
     nav.menu ul li{
         border-bottom:1px solid #eaeaea;
